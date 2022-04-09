@@ -1,0 +1,8 @@
+.money-input-wrapper {
+  width: 200px;
+  height: 200px;
+  padding: 10px;
+  border-radius: 9px;
+  background-color: #485461;
+  background-image: linear-gradient(315deg, #15181b 20%, #28313b 74%);
+}

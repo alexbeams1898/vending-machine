@@ -1,0 +1,41 @@
+.header {
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 40px;
+  font-style: oblique;
+  font-weight: 5000;
+  display: block;
+  margin-top: -10px;
+  padding-bottom: 70px;
+}
+
+.headers {
+  position: sticky;
+  background-color: aliceblue;
+  top: 0;
+}
+
+table {
+  display: inline-block;
+  font-family: "Courier New", Courier, monospace;
+  table-layout: fixed;
+  height: 400px;
+  width: 100%;
+  overflow: scroll;
+  background-color: aliceblue;
+  padding: 0px;
+  border-radius: 10px;
+  border-style:groove;
+}
+
+th {
+  text-align: center;
+  font-size: 30px;
+}
+
+td {
+  font-size: 20px;
+  text-align: center;
+  padding: 30px;
+  padding-bottom: 5px;
+}

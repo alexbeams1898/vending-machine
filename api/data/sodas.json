@@ -1,0 +1,29 @@
+[{
+   "id": "01",
+   "productName": "Fizz",
+   "description": "An effervescent fruity experience with hints of grape and coriander.",
+   "cost": 1,
+   "quantity": 100,
+   "maxQuantity": 100
+ }, {
+   "id": "02",
+   "productName": "Pop",
+   "description": "An explosion of flavor that will knock your socks off!",
+   "cost": 1,
+   "quantity": 100,
+   "maxQuantity": 100
+ }, {
+   "id": "03",
+   "productName": "Cola",
+   "description": " A basic no nonsense cola that is the perfect pick me up for any occasion.",
+   "cost": 1,
+   "quantity": 200,
+   "maxQuantity": 200
+ }, {
+   "id": "04",
+   "productName": "Mega Cola",
+   "description": "Not for the faint of heart.  So flavorful and so invigorating, it should probably be illegal.",
+   "cost": 1,
+   "quantity": 50,
+   "maxQuantity": 50
+ }]

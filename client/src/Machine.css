@@ -1,0 +1,33 @@
+.container {
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 0px;
+  grid-template-areas:
+    "a a b"
+    "a a c";
+  align-items: center;
+  justify-items: center;
+}
+
+.item-list {
+  grid-area: a;
+  justify-self: center;
+}
+
+.money-input {
+  margin-top: -20px;
+  grid-area: b;
+  justify-self: left;
+}
+
+.soda-id-input {
+  grid-area: c;
+  justify-self: left;
+}
+
+.center {
+  font-family: monospace;
+  font-size: large;
+  text-align: left;
+}
