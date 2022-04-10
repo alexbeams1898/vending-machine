@@ -1,8 +1,8 @@
-.soda-input-button-box {
+.money-input-button-box {
   width: 100%;
   height: calc(100% - 80px);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   grid-gap: 10px;
 }

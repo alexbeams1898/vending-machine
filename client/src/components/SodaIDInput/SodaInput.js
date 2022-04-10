@@ -36,6 +36,7 @@ const SodaIDInput = (parentFunds) => {
     }
     if (!idExists) {
       alert("Error: ID does not exist");
+      setId("");
       return;
     }
 
@@ -47,9 +48,8 @@ const SodaIDInput = (parentFunds) => {
       else {
         axios
           .post("http://localhost:9000/sodas/dispense?id=" + sodaId)
-          .catch((err) => console.log(err));
+          .catch((err) => alert(err));
 
-        console.log(funds - sodas[0].cost);
         axios
           .post("http://localhost:9000/sodas/funds", {
             funds: funds - soda.cost,
@@ -61,17 +61,20 @@ const SodaIDInput = (parentFunds) => {
           type: "application/json",
         });
         const href = URL.createObjectURL(blob);
-
         const a = Object.assign(document.createElement("a"), {
           href,
           style: "display:none",
           download: soda.productName + ".json",
         });
+
         document.body.appendChild(a);
         a.click();
 
+        setId("");
+        //Make cha-ching sound and confirm
         chachingSound();
         alert("A " + soda.productName + " was dispensed!");
+
         // Refresh page
         window.location.reload(false);
       }
@@ -82,7 +85,6 @@ const SodaIDInput = (parentFunds) => {
     switch (btn) {
       case "OK":
         dispense(id);
-        setId("");
         break;
       case "X":
         beepSound();

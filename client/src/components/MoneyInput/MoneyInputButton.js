@@ -1,4 +1,4 @@
-import "./Button.css";
+import "./MoneyInputButton.css";
 
 const Button = ({ className, value, onClick }) => {
   return (

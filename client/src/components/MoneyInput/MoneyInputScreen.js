@@ -1,5 +1,5 @@
 import { Textfit } from "react-textfit";
-import "./Screen.css";
+import "./MoneyInputScreen.css";
 
 const Screen = ({ value }) => {
   return (

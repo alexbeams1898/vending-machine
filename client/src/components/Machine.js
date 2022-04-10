@@ -10,13 +10,13 @@ const Machine = () => {
         <ItemsList></ItemsList>
       </div>
       <div className="money-input">
-        <div className="center">
+        <div className="input-label">
           <b>Add funds</b>
         </div>
         <MoneyInput></MoneyInput>
       </div>
       <div className="soda-id-input">
-        <div className="center">
+        <div className="input-label">
           <b>Select soda by ID</b>
         </div>
         <SodaIDInput></SodaIDInput>

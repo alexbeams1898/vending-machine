@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
-import Screen from "./Screen";
-import ButtonBox from "./ButtonBox";
-import Button from "./Button";
+import Screen from "./MoneyInputScreen";
+import ButtonBox from "./MoneyInputButtonBox";
+import Button from "./MoneyInputButton";
 import axios from "axios";
 import { useSound } from "use-sound";
 import coin from "../../sounds/coin-slot.wav";
