@@ -75,7 +75,7 @@ router.post("/addSoda", function (req, res, next) {
     if (sodas[i].id === newSoda.id) {
       res
         .status(500)
-        .send("Soda with id: " + newSoda.id + "already exists", 500);
+        .send("Soda with id: " + newSoda.id + " already exists", 500);
       return;
     }
   }
