@@ -1,4 +1,4 @@
-import "./Button.css";
+import "./SodaInputButton.css";
 
 const Button = ({ className, value, onClick }) => {
   return (

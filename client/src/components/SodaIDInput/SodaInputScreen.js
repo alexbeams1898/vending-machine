@@ -1,5 +1,5 @@
 import { Textfit } from "react-textfit";
-import "./Screen.css";
+import "./SodaInputScreen.css";
 
 const Screen = ({ value }) => {
   return (

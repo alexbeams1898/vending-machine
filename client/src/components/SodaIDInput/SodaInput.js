@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
-import "./SodaIDInput.css";
-import Screen from "./Screen";
-import ButtonBox from "./ButtonBox";
-import Button from "./Button";
+import "./SodaInput.css";
+import Screen from "./SodaInputScreen";
+import ButtonBox from "./SodaInputButtonBox";
+import Button from "./SodaInputButton";
 import { useSound } from "use-sound";
 import beep from "../../sounds/beep.wav";
 import buy from "../../sounds/buySoda.mp3";

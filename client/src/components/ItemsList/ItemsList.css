@@ -1,12 +1,11 @@
 .header {
   text-align: center;
   font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
-  font-size: 40px;
+  font-size: 45px;
   font-style: oblique;
   font-weight: 5000;
   display: block;
-  margin-top: -10px;
-  padding-bottom: 70px;
+  padding-bottom: 40px;
 }
 
 .headers {
@@ -19,13 +18,13 @@ table {
   display: inline-block;
   font-family: "Courier New", Courier, monospace;
   table-layout: fixed;
-  height: 400px;
+  height: 425px;
   width: 100%;
   overflow: scroll;
   background-color: aliceblue;
-  padding: 0px;
+  margin-bottom: 60px;
   border-radius: 10px;
-  border-style:groove;
+  border-style: groove;
 }
 
 th {

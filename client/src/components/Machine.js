@@ -1,6 +1,6 @@
-import SodaIDInput from "./components/SodaIDInput/SodaIDInput";
-import MoneyInput from "./components/MoneyInput/MoneyInput";
-import ItemsList from "./components/ItemsList/ItemsList";
+import SodaIDInput from "./SodaIDInput/SodaInput";
+import MoneyInput from "./MoneyInput/MoneyInput";
+import ItemsList from "./ItemsList/ItemsList";
 import "./Machine.css";
 
 const Machine = () => {

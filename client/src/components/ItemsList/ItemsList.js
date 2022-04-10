@@ -19,7 +19,7 @@ const ItemsList = () => {
 
   const listTable = sodas.map((item, i) => {
     return (
-      <tr>
+      <tr key={i}>
         <td>{item.id}</td>
         <td>
           <b>{item.productName}</b>

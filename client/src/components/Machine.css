@@ -16,9 +16,9 @@
 }
 
 .money-input {
-  margin-top: -20px;
   grid-area: b;
   justify-self: left;
+  padding-bottom: 0px;
 }
 
 .soda-id-input {
@@ -27,7 +27,7 @@
 }
 
 .center {
-  font-family: monospace;
-  font-size: large;
-  text-align: left;
+  font-family: "Courier New", Courier, monospace;
+  font-size: 20px;
+  text-align: center;
 }

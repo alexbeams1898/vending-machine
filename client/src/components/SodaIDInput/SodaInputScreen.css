@@ -10,5 +10,6 @@
   justify-content: flex-end;
   color: white;
   font-weight: bold;
+  font-family: "Courier New", Courier, monospace;
   box-sizing: border-box;
 }
