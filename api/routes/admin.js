@@ -53,11 +53,33 @@ router.post("/updateMax", function (req, res, next) {
 });
 
 router.post("/addSoda", function (req, res, next) {
-  if (!req.body) {
-    res.status(500).send("Request body is null", 500);
+  if (
+    !req.body.id ||
+    !req.body.productName ||
+    !req.body.description ||
+    !req.body.cost ||
+    !req.body.quantity ||
+    !req.body.maxQuantity
+  ) {
+    res
+      .status(500)
+      .send(
+        "Your soda has incorrect json, please make sure your json matches the others in sodas.json",
+        500
+      );
     return;
   }
+
   let newSoda = req.body;
+  for (let i = 0; i < sodas.length; i++) {
+    if (sodas[i].id === newSoda.id) {
+      res
+        .status(500)
+        .send("Soda with id: " + newSoda.id + "already exists", 500);
+      return;
+    }
+  }
+
   sodas.push(newSoda);
   res.send(sodas);
 });
