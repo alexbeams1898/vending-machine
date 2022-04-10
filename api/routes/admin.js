@@ -7,6 +7,10 @@ router.post("/restock", function (req, res, next) {
     res.status(500).send("numberOfSodas is null", 500);
     return;
   }
+  if (!sodas[Number(req.query.id - 1)]) {
+    res.status(500).send("Cannot find soda with id: " + req.query.id, 500);
+    return;
+  }
   let soda = sodas[Number(req.query.id - 1)];
   let numOfSodas = req.body.numberOfSodas + soda.quantity;
   if (numOfSodas > soda.maxQuantity)
@@ -26,6 +30,11 @@ router.post("/updatePrice", function (req, res, next) {
     res.status(500).send("newPrice is null", 500);
     return;
   }
+  if (!sodas[Number(req.query.id - 1)]) {
+    res.status(500).send("Cannot find soda with id: " + req.query.id, 500);
+    return;
+  }
+
   sodas[Number(req.query.id - 1)].cost = req.body.newPrice;
   res.send(sodas);
 });
@@ -35,13 +44,17 @@ router.post("/updateMax", function (req, res, next) {
     res.status(500).send("newMax is null", 500);
     return;
   }
+  if (!sodas[Number(req.query.id - 1)]) {
+    res.status(500).send("Cannot find soda with id: " + req.query.id, 500);
+    return;
+  }
   sodas[Number(req.query.id - 1)].maxQuantity = req.body.newMax;
   res.send(sodas);
 });
 
 router.post("/addSoda", function (req, res, next) {
   if (!req.body) {
-    res.status(500).send("Response body is null", 500);
+    res.status(500).send("Request body is null", 500);
     return;
   }
   let newSoda = req.body;
