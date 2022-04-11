@@ -23,9 +23,9 @@ You should now see that the correct soda file has been downloaded.
 
 All API calls in this application are triggered from the base URL `http://localhost:9000` e.g. `GET http://localhost:9000/admin/restock?id=01`
 
-## Relevant API Calls
+### Relevant API Calls
 
-### /sodas
+#### /sodas
 
 **GET /sodas**
 - Get current list of soda objects
@@ -46,7 +46,7 @@ To set current funds to $3.75, use the following payload:
 - Subtracts 1 from the 'quantity' property of the soda specified by {sodaId} e.g. `?=id=01` will select the soda with the id '01'
 - No payload required
 
-### /admin
+#### /admin
 
 Note: The 'admin' route is used to perform actions that only a ColaCo admin is allowed to perform. Thus, these actions are not available in the UI.
 
