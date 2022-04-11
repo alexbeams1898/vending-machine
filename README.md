@@ -6,7 +6,7 @@ A web application that acts as a vending machine for the made-up soda company, C
 
 1. Clone this repository
 2. `cd /vending-machine`
-3. Run `npm run installBoth`
+3. Run `npm run installBoth` to install necessary packages
 4. Run `npm start` to start application
 5. Navigate to `http://localhost:3000/` to use vending machine
 
