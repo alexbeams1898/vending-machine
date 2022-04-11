@@ -9,7 +9,7 @@ import money from "../../sounds/money.wav";
 import beep from "../../sounds/beep.wav";
 import "./MoneyInput.css";
 
-const btnValues = [["1¢", "5¢ ", "10¢"], ["25¢", "$1"], ["X"]];
+const btnValues = ["1¢", "5¢ ", "10¢", "25¢", "$1", "X"];
 
 const MoneyInput = () => {
   const [funds, setFunds] = useState(0);
@@ -76,7 +76,7 @@ const MoneyInput = () => {
     <div className="money-input-wrapper">
       <Screen value={"$" + funds.toFixed(2)} />
       <ButtonBox>
-        {btnValues.flat().map((btn, i) => {
+        {btnValues.map((btn, i) => {
           return (
             <Button
               key={i}

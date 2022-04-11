@@ -8,12 +8,7 @@ import { useSound } from "use-sound";
 import beep from "../../sounds/beep.wav";
 import buy from "../../sounds/buySoda.mp3";
 
-const btnValues = [
-  ["1", "2", "3"],
-  ["4", "5", "6"],
-  ["7", "8", "9"],
-  ["X", "0", "OK"],
-];
+const btnValues = ["1", "2", "3", "4", "5", "6", "7", "8", "9", "X", "0", "OK"];
 
 const SodaIDInput = (parentFunds) => {
   const [id, setId] = useState("");
@@ -103,7 +98,7 @@ const SodaIDInput = (parentFunds) => {
     <div className="soda-id-input-wrapper">
       <Screen value={id} />
       <ButtonBox>
-        {btnValues.flat().map((btn, i) => {
+        {btnValues.map((btn, i) => {
           return (
             <Button
               key={i}
