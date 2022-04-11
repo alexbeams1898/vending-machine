@@ -46,6 +46,7 @@ const SodaIDInput = (parentFunds) => {
 
       if (funds - soda.cost < 0) alert("Error: Insufficient funds");
       else {
+        // If funds are adequate, dispense soda
         axios
           .post("http://localhost:9000/sodas/dispense?id=" + sodaId)
           .catch((err) => alert(err));
@@ -71,6 +72,7 @@ const SodaIDInput = (parentFunds) => {
         a.click();
 
         setId("");
+
         //Make cha-ching sound and confirm
         chachingSound();
         alert("A " + soda.productName + " was dispensed!");

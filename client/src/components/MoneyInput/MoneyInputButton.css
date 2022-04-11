@@ -14,7 +14,7 @@ button:hover {
 }
 
 .equals {
-  background-color:rgb(19, 218, 62);
+  background-color: rgb(19, 218, 62);
 }
 
 .equals:hover {
@@ -22,11 +22,11 @@ button:hover {
 }
 
 .clear {
-    color:rgb(255, 255, 255);
-  background-color:rgb(202, 23, 23);
+  color: rgb(255, 255, 255);
+  background-color: rgb(202, 23, 23);
 }
 
 .clear:hover {
-    color:rgb(255, 255, 255);
+  color: rgb(255, 255, 255);
   background-color: rgb(172, 88, 77);
 }
