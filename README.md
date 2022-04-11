@@ -31,10 +31,10 @@ All API calls in this application are triggered from the base URL `http://localh
 - Get current list of soda objects
 
 **GET /sodas/funds**
-- Used to get the current funds added to the machine.
+- Used to get the current funds added to the machine
 
 **POST /sodas/funds**
-- Used to set the current funds added to machine.
+- Used to set the current funds added to machine
 
 Example: 
 To set current funds to $3.75, use the following payload:
@@ -43,7 +43,7 @@ To set current funds to $3.75, use the following payload:
 }
 
 **POST /sodas/dispense?id={sodaID}**
-- Subtracts 1 from the 'quantity' property of the soda specified by {sodaId} e.g. `?=id=01` will select the soda with the id '01'
+- Subtracts 1 from the 'quantity' property of the soda, specified by {sodaId}
 - No payload required
 
 #### /admin
@@ -56,9 +56,9 @@ Note: The 'admin' route is used to perform actions that only a ColaCo admin is a
 - Returns up-to-date list of sodas
 
 Example:
-To add 10 sodas to the soda with the id '02', use the following url and payload:
-`http://localhost:9000/admin/restock?id=02`
-{
+To add 10 sodas to the soda with the id '02', use the following:
+url: `http://localhost:9000/admin/restock?id=02`
+payload: {
   "numberOfSodas": 10
 }
 
@@ -67,9 +67,9 @@ To add 10 sodas to the soda with the id '02', use the following url and payload:
 - Returns up-to-date list of sodas
 
 Example:
-To change the price of the soda with the id '03' to $2.75, use the following url and payload:
-`http://localhost:9000/admin/restock?id=02`
-{
+To change the price of the soda with the id '03' to $2.75, use the following:
+url: `http://localhost:9000/admin/restock?id=02`
+payload: {
   "newPrice": 2.75
 }
 
@@ -78,9 +78,9 @@ To change the price of the soda with the id '03' to $2.75, use the following url
 - Returns up-to-date list of sodas
 
 Example:
-To change the max amount that soda with id '04' can restock to 200 sodas, use the following url and payload:
-`http://localhost:9000/admin/updateMax?id=04`
-{
+To change the max amount that soda with id '04' can restock to 200 sodas, use the following:
+url: `http://localhost:9000/admin/updateMax?id=04`
+payload: {
   "newMax": 200
 }
 
@@ -90,7 +90,7 @@ To change the max amount that soda with id '04' can restock to 200 sodas, use th
 - Note: Will not work if payload does not use correct schema
 
 Example:
-Add a new soda called "Ale"
+To add a new soda called "Ale", use the following payload:
 {
    "id": "05",
    "productName": "Ale",
