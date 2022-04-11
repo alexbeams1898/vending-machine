@@ -22,7 +22,9 @@ const ItemsList = () => {
       <tr key={i}>
         <td>{item.id}</td>
         <td>
-          <b>{item.productName}</b>
+          <span title={item.description}>
+            <b>{item.productName}</b>
+          </span>
         </td>
         <td>${item.cost.toFixed(2)}</td>
         <td>{item.quantity}</td>
