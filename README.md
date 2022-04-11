@@ -12,11 +12,11 @@ A web application that acts as a vending machine for the made-up soda company, C
 
 ## How to use UI
 
-Note: This vending machine makes sounds, so please make sure your sound is on when using
+Note: This vending machine makes sounds, so please make sure your sound is on when using.
 
 The workflow for this vending machine is as follows:
 1. Add enough funds for a soda in the soda list
-2. Enter the soda's id in the dialog under "Select soda by ID"
+2. Enter the soda's id in the dialog under "Select soda by ID". Also note that if you hover over a soda name, you can view the description of the soda.
 3. Press the green "OK" button
 
 You should now see that the correct soda file has been downloaded.
