@@ -23,9 +23,11 @@ You should now see that the correct soda file has been downloaded.
 
 ## How to use API
 
-All API calls in this application are triggered from the base URL `http://localhost:9000` e.g. `GET http://localhost:9000/admin/restock?id=01`
+This API allows a user to view the current status of the vending machine and allows an **admin** to **restock a soda, update the price on a soda, add a new soda to the current list of sodas, and more**. All API calls in this application are triggered from the base URL `http://localhost:9000` e.g. `GET http://localhost:9000/admin/restock?id=01`
 
 ### Relevant API Calls
+
+The '/sodas' endpoint can be hit by any user, and is also used by the application itself to perform core functionality.
 
 #### /sodas
 
@@ -50,7 +52,7 @@ To set current funds to $3.75, use the following payload:
 
 #### /admin
 
-Note: The 'admin' route is used to perform actions that only a ColaCo admin is allowed to perform. Thus, these actions are not available in the UI.
+The '/admin' endpoint is used to perform actions that only a ColaCo admin is allowed to perform. Thus, these actions are not available in the UI.
 
 **POST /admin/restock?id={sodaID}**
 - Used to restock a soda, specified by {sodaID}.
@@ -71,7 +73,7 @@ payload: {
 
 Example:
 To change the price of the soda with the id '03' to $2.75, use the following:
-url: `http://localhost:9000/admin/restock?id=02`
+url: `http://localhost:9000/admin/updatePrice?id=02`
 payload: {
   "newPrice": 2.75
 }
