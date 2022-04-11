@@ -33,10 +33,10 @@ All API calls in this application are triggered from the base URL `http://localh
 - Get current list of soda objects
 
 **GET /sodas/funds**
-- Used to get the current funds added to the machine
+- Used to get the total amount of funds currently added to the machine
 
 **POST /sodas/funds**
-- Used to set the current funds added to machine
+- Used to set the total funds added to machine
 
 Example: 
 To set current funds to $3.75, use the following payload:
@@ -67,6 +67,7 @@ payload: {
 **POST /admin/updatePrice?id={sodaID}**
 - Used to update the price of a soda, specified by {sodaID}.
 - Returns up-to-date list of sodas
+- **Must refresh UI for updated value to show**
 
 Example:
 To change the price of the soda with the id '03' to $2.75, use the following:
@@ -78,6 +79,7 @@ payload: {
 **POST /admin/updateMax?id={sodaID}**
 - Used to update the max amount that the soda is allowed to restock, specified by {sodaID}.
 - Returns up-to-date list of sodas
+- **Must refresh UI for updated value to show**
 
 Example:
 To change the max amount that soda with id '04' can restock to 200 sodas, use the following:
