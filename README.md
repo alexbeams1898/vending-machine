@@ -27,7 +27,7 @@ This API allows a user to view the current status of the vending machine and all
 
 ### Relevant API Calls
 
-The '/sodas' endpoint can be hit by any user, and is also used by the application itself to perform core functionality.
+The '/sodas' endpoint is utilized by the vending machine to perform core functionality.
 
 #### /sodas
 
